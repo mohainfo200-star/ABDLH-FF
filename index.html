@@ -3,64 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abdlh ff - آخر أخبار وتحديثات لعبة Free Fire وأحداثها ونصائح اللاعبين.">
+<title>Abdlh ff | أخبار فري فاير</title>
 <meta name="description" content="App Abdlh - اكتشف أفضل التطبيقات المفيدة للهاتف، وروابط تحميلها الرسمية، ومقالات تقنية احترافية.">
 <title>App Abdlh | عالم التطبيقات</title>
 
 <style>
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-margin:0;
-font-family:Arial,Tahoma,sans-serif;
-background:linear-gradient(160deg,#071329,#0a2450,#06101f);
-color:#fff;
-line-height:1.9;
-}
-header{
-padding:20px 5%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-flex-wrap:wrap;
-gap:15px;
+@@ -26,91 +26,64 @@
 background:#061020;
 border-bottom:2px solid #168cff;
 }
+.logo{font-size:30px;font-weight:900;color:#ffc857}
 .logo{font-size:28px;font-weight:900;color:#ffc857}
 nav a{
+color:white;
+text-decoration:none;
+margin:0 8px;
+font-size:14px;
 color:white;text-decoration:none;margin:0 8px;font-size:14px;
 }
 nav a:hover{color:#ffc857}
 .hero{
+text-align:center;
+padding:65px 20px;
 text-align:center;padding:65px 20px;
 background:radial-gradient(ellipse at top,#174b91,transparent 75%);
 }
 .tag{
+display:inline-block;
+border:1px solid #4b91d7;
+border-radius:30px;
+padding:5px 15px;
+color:#cde8ff;
 display:inline-block;border:1px solid #4b91d7;
 border-radius:30px;padding:5px 15px;color:#cde8ff;
 }
+h1{font-size:clamp(32px,6vw,55px);line-height:1.3}
 h1{font-size:clamp(32px,6vw,55px);line-height:1.4}
 h1 span{color:#ffc857}
 .hero p{max-width:700px;margin:15px auto 25px;color:#c2d4ee}
 .btn{
+display:inline-block;
+background:#ffc857;
+color:#071329;
+padding:12px 23px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+margin:5px;
+transition:.2s;
 display:inline-block;background:#ffc857;color:#071329;
 padding:11px 22px;border-radius:10px;text-decoration:none;
 font-weight:bold;margin:5px;transition:.2s;
 }
 .btn:hover{background:#ffdf8a;transform:translateY(-2px)}
 main{max-width:1100px;margin:auto;padding:25px 5% 60px}
+h2{
+border-right:5px solid #ffc857;
+padding-right:12px;
+color:#fff;
+}
 h2{border-right:5px solid #ffc857;padding-right:12px}
 h3{color:#ffc857}
 .grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:18px;
 }
 .card{
 background:linear-gradient(145deg,#142e55,#0c1d38);
+border:1px solid #28466e;
+border-radius:16px;
+padding:22px;
+margin:15px 0;
 border:1px solid #28466e;border-radius:16px;
 padding:22px;margin:15px 0;
 }
 .card p{color:#c2d4ee}
+.ad{
+border:1px dashed #53719a;
+border-radius:12px;
+text-align:center;
+padding:22px;
+color:#9fb5d2;
+background:#0a1a32;
+margin:30px 0;
 .app-icon{
 font-size:43px;width:75px;height:75px;
 display:flex;align-items:center;justify-content:center;
@@ -68,6 +97,10 @@ border-radius:18px;background:#1d3d69;margin-bottom:12px;
 }
 .article{
 background:linear-gradient(145deg,#102447,#0b1b34);
+border:1px solid #28466e;
+border-radius:16px;
+padding:25px;
+margin:20px 0;
 border:1px solid #28466e;border-radius:16px;
 padding:25px;margin:20px 0;
 }
@@ -78,89 +111,68 @@ border:1px dashed #53719a;border-radius:12px;
 text-align:center;padding:22px;color:#9fb5d2;
 background:#0a1a32;margin:30px 0;
 }
+.article p{color:#d3def0}
+.article li{margin:8px 0;color:#d3def0}
 .download{
+text-align:center;
+padding:25px;
+background:#102447;
+border:1px solid #28466e;
+border-radius:15px;
+margin:25px 0;
 text-align:center;padding:25px;background:#102447;
 border:1px solid #28466e;border-radius:15px;margin:25px 0;
 }
 footer{
+text-align:center;
+padding:25px;
+color:#91a7c6;
 text-align:center;padding:25px;color:#91a7c6;
 border-top:1px solid #1b365a;
 }
 @media(max-width:600px){
-header{flex-direction:column}
-nav{text-align:center}
-nav a{display:inline-block;margin:5px}
-.hero{padding:45px 15px}
-.article{padding:18px}
-}
-</style>
-</head>
-
+@@ -126,195 +99,208 @@
 <body>
 
 <header>
+<div class="logo">🔥 Abdlh ff</div>
 <div class="logo">📱 App Abdlh</div>
 <nav>
 <a href="#home">الرئيسية</a>
+<a href="#news">الأخبار</a>
+<a href="#article">المقال</a>
+<a href="#updates">التحديثات</a>
+<a href="#download">تحميل اللعبة</a>
 <a href="#apps">التطبيقات</a>
 <a href="#article">المقالات</a>
 <a href="#tips">نصائح</a>
 <a href="#about">حول الموقع</a>
 </nav>
 </header>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الموقع تحت الصيانة</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .card {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            width: 90%;
-        }
-        h1 { color: #e67e22; margin-bottom: 10px; }
-        p { font-size: 16px; line-height: 1.6; color: #555; }
-        .footer { margin-top: 25px; font-weight: bold; color: #2c3e50; }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>الموقع تحت الصيانة</h1>
-        <p>نعمل حالياً على تحديث وترقية الموقع لتقديم أفضل خدمة ممكنة. سيتم تزويدكم بكافة التفاصيل والمعلومات قريباً.</p>
-        <p>شكراً لاهتمامكم وصبركم معنا.</p>
-        <div class="footer">فريق الدعم: mch mohamed2026</div>
-    </div>
-</body>
-</html>
+
 <section class="hero" id="home">
+<span class="tag">🎮 عالم فري فاير بين يديك</span>
+<h1>مرحبًا بك في <span>Abdlh ff</span></h1>
 <span class="tag">🚀 اكتشف عالم التطبيقات</span>
 <h1>مرحبًا بك في <span>App Abdlh</span></h1>
 <p>
+اكتشف عالم Free Fire المليء بالحماس والتحديات!
+تابع آخر الأخبار والتحديثات والأحداث، واستعد لخوض معارك البقاء.
 منصتك لاكتشاف أفضل تطبيقات الهاتف، وروابط التحميل الرسمية،
 والتعرف على أحدث الأدوات الرقمية التي تجعل حياتك أسهل وأكثر متعة.
 </p>
+<a class="btn" href="#news">📰 اكتشف الأخبار</a>
+<a class="btn" href="#download">📥 تحميل اللعبة</a>
 <a class="btn" href="#apps">📲 اكتشف التطبيقات</a>
 <a class="btn" href="#article">📚 اقرأ المقالات</a>
 </section>
 
 <main>
 
+<div class="ad">
+📢 مساحة إعلانية مخصصة لإعلانات الموقع.
+<br>
+تحتاج إلى إضافة كود Google AdSense بعد قبول الموقع.
 <section id="apps">
 <h2>📱 أفضل التطبيقات المفيدة</h2>
 <p>اكتشف مجموعة من التطبيقات الشهيرة، وحمّلها من مصادرها الرسمية.</p>
@@ -169,32 +181,135 @@ nav a{display:inline-block;margin:5px}
 
 <div class="card">
 <div class="app-icon">▶️</div>
+<h3>YouTube</h3>
+<p>شاهد الفيديوهات التعليمية والترفيهية، وتابع قنواتك المفضلة واكتشف محتوى جديدًا كل يوم.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.google.android.youtube" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
 
+<section id="news">
+<h2>📰 آخر الأخبار</h2>
+<div class="card">
+<div class="app-icon">👻</div>
+<h3>Snapchat</h3>
+<p>شارك الصور والفيديوهات مع أصدقائك، واستخدم العدسات والفلاتر الإبداعية.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.snapchat.android" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
 
+<div class="grid">
+<div class="card">
+<div class="app-icon">✈️</div>
+<h3>Telegram</h3>
+<p>تواصل مع أصدقائك، وأنشئ مجموعات وقنوات، وتابع المحتوى الذي يهمك.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<div class="card">
+<h3>🎮 أخبار اللعبة</h3>
+<p>
+تابع أخبار Free Fire وتعرّف على المستجدات والتغييرات التي تطرأ على اللعبة.
+</p>
+<div class="app-icon">💬</div>
+<h3>WhatsApp</h3>
+<p>أرسل الرسائل والصور والملفات، وأجرِ المكالمات الصوتية والمرئية بسهولة.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.whatsapp" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<div class="card">
+<h3>🎁 الأحداث والمكافآت</h3>
+<p>
+اكتشف الفعاليات والمكافآت داخل اللعبة وتابع تفاصيل الأحداث الجديدة.
+</p>
+<div class="app-icon">🎬</div>
+<h3>CapCut</h3>
+<p>حرّر الفيديوهات، وأضف المؤثرات والانتقالات والنصوص، وصمّم مقاطع احترافية.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<div class="card">
+<h3>🛠️ نصائح اللاعبين</h3>
+<p>
+طوّر مهاراتك في التصويب والتحرك، وتعلم استراتيجيات تساعدك على خوض المعارك.
+</p>
+<div class="app-icon">🎵</div>
+<h3>Spotify</h3>
+<p>استمع إلى الموسيقى والبودكاست، واكتشف قوائم تشغيل تناسب ذوقك.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.spotify.music" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<div class="card">
+<div class="app-icon">🎨</div>
+<h3>Canva</h3>
+<p>صمّم منشورات وصورًا مصغرة وشعارات وإعلانات بسهولة باستخدام أدوات التصميم.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.canva.editor" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+</section>
+
+<div class="ad">
+📢 مساحة إعلانية ثانية — موضع مخصص للإعلانات.
+<div class="card">
+<div class="app-icon">🌐</div>
+<h3>Google Chrome</h3>
+<p>تصفّح الإنترنت وابحث عن المعلومات، واحفظ مواقعك المفضلة للوصول إليها بسرعة.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.android.chrome" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<section id="article" class="article">
+<div class="card">
+<div class="app-icon">📁</div>
+<h3>Google Drive</h3>
+<p>احفظ ملفاتك وصورك على السحابة، ونظّم مستنداتك وشاركها بسهولة.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.google.android.apps.docs" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<h2>🔥 Free Fire: ادخل ساحة المعركة، قاتل حتى النهاية واصنع أسطورتك!</h2>
+<div class="card">
+<div class="app-icon">🤖</div>
+<h3>ChatGPT</h3>
+<p>استفد من الذكاء الاصطناعي في الكتابة والتعلم وطرح الأسئلة وتوليد الأفكار.</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.openai.chatgpt" target="_blank" rel="noopener">📥 تحميل التطبيق</a>
+</div>
+
+<p>
+هل أنت مستعد لخوض واحدة من أكثر مغامرات البقاء إثارة على الهاتف؟ مرحبًا بك في عالم <strong>Free Fire</strong>، اللعبة التي تجمع بين الحماس والتحدي والسرعة والذكاء في معارك لا تعرف الاستسلام! هنا، كل ثانية تصنع الفرق، وكل قرار قد يحدد مصيرك، وكل مواجهة تمنحك فرصة جديدة لإثبات مهاراتك.
+</p>
+</div>
+</section>
+
+<p>
+تأخذك فري فاير إلى جزيرة مليئة بالمخاطر والمنافسين، حيث تبدأ رحلتك بالقفز من الطائرة واختيار مكان الهبوط المناسب، ثم البحث عن الأسلحة والمعدات وجمع الموارد الضرورية للبقاء. ومع تقلص المنطقة الآمنة، تزداد المواجهات اشتعالًا، ويصبح عليك التحرك بحذر، والتخطيط بذكاء، والاستعداد لأي عدو قد يظهر أمامك.
+</p>
 <div class="ad">
 📢 مساحة إعلانية مخصصة لإعلانات الموقع.
 </div>
 
+<h3>⚔️ معارك سريعة ومليئة بالإثارة</h3>
 <section id="article" class="article">
 <h2>📚 دليلك الشامل لاختيار التطبيقات المفيدة لهاتفك</h2>
 
 <p>
+تتميز Free Fire بمباريات سريعة تناسب عشاق الأكشن والتحدي. يمكنك خوض معارك البقاء بمفردك أو تشكيل فريق مع أصدقائك والتعاون لتحقيق الانتصار. لا يتعلق الأمر بالقوة وحدها، بل بقدرتك على اتخاذ القرارات المناسبة في اللحظات الحاسمة، واختيار السلاح الملائم، واستغلال البيئة لصالحك.
 أصبحت تطبيقات الهواتف الذكية جزءًا أساسيًا من حياتنا اليومية.
 فهي تساعدنا على التواصل والتعلم والعمل والترفيه، وتوفر أدوات كثيرة
 يمكن أن تجعل استخدام الهاتف أكثر سهولة وتنظيمًا.
 لكن مع وجود آلاف التطبيقات، قد يكون من الصعب اختيار التطبيقات المناسبة.
 </p>
 
+<h3>🛡️ كوّن فريقك وواجه التحديات</h3>
+
 <h3>📱 كيف تختار التطبيق المناسب؟</h3>
 <p>
+هل تفضل القتال الفردي أم اللعب الجماعي؟ في فري فاير، يمكنك تشكيل فريق يصل إلى أربعة لاعبين والتواصل معهم أثناء المعركة. تعاون مع زملائك، وغطِّ تحركاتهم، وساعدهم عند الحاجة، وواجهوا الخصوم بخطة مشتركة. فالفريق المتفاهم يستطيع تحويل أصعب المواقف إلى فرص جديدة للفوز.
 قبل تثبيت أي تطبيق، حدّد الهدف الذي تريد تحقيقه.
 إذا كنت ترغب في تحسين مهاراتك، فابحث عن تطبيقات التعليم.
 وإذا كنت من محبي صناعة المحتوى، فاختر أدوات تحرير الفيديو والتصميم.
 أما إذا كنت تحتاج إلى تنظيم ملفاتك، فاستعن بتطبيقات التخزين السحابي.
 </p>
 
+<h3>🎯 طوّر مهاراتك واصنع أسلوبك الخاص</h3>
+
 <h3>🔐 حماية بياناتك أثناء استخدام التطبيقات</h3>
 <p>
+اكتشف مجموعة متنوعة من الأسلحة والشخصيات والقدرات، وجرّب استراتيجيات مختلفة حتى تجد أسلوب اللعب الذي يناسبك. تدرب على التصويب، وحسّن سرعة رد فعلك، وتعلم اختيار أماكن الهبوط والتحرك داخل الخريطة. كل مباراة تمنحك تجربة جديدة وفرصة لتطوير مستواك.
 الأمان الرقمي عنصر مهم عند تثبيت التطبيقات.
 احرص على تحميل التطبيقات من المتاجر الرسمية، وراجع الأذونات التي تطلبها.
 لا تمنح التطبيق صلاحية الوصول إلى الكاميرا أو الميكروفون أو جهات الاتصال
@@ -202,15 +317,25 @@ nav a{display:inline-block;margin:5px}
 كما يُنصح بتحديث التطبيقات باستمرار لتستفيد من التحسينات الأمنية.
 </p>
 
+<h3>🏆 كلاش سكواد: تحدٍّ بين فريقين</h3>
+
 <h3>⚡ كيف تحافظ على أداء هاتفك؟</h3>
 <p>
+إذا كنت من محبي المواجهات المباشرة، فإن وضع Clash Squad يمنحك فرصة خوض معارك جماعية بنظام أربعة ضد أربعة. اشترِ الأسلحة المناسبة، ونسّق مع فريقك، وواجه الخصم في جولات تتطلب التركيز وسرعة اتخاذ القرار. هنا، التعاون والتكتيك يصنعان أجواء تنافسية مليئة بالحماس.
 يمكنك تحسين تجربة استخدام الهاتف من خلال حذف التطبيقات التي لا تحتاج إليها،
 وتنظيف الملفات غير الضرورية، وتحديث نظام التشغيل عند توفر تحديث مناسب.
 كما يُفضّل تجنّب تثبيت تطبيقات مجهولة تعدك بتسريع الهاتف بشكل سحري.
 </p>
 
+<h3>🌟 لماذا تستحق Free Fire التجربة؟</h3>
+
 <h3>🎯 نصائح للاستفادة من التطبيقات</h3>
 <ul>
+<li>مباريات سريعة ومليئة بالتحديات.</li>
+<li>أوضاع لعب متنوعة بين البقاء والمواجهات الجماعية.</li>
+<li>إمكانية اللعب مع الأصدقاء والتواصل داخل اللعبة.</li>
+<li>شخصيات وقدرات وأسلحة متنوعة.</li>
+<li>أحداث ومكافآت وتحديثات تضيف تجارب جديدة.</li>
 <li>اختر التطبيقات التي تلبي احتياجاتك الفعلية.</li>
 <li>تحقق من اسم المطوّر وتقييمات المستخدمين.</li>
 <li>اقرأ سياسة الخصوصية قبل مشاركة معلوماتك الشخصية.</li>
@@ -218,34 +343,78 @@ nav a{display:inline-block;margin:5px}
 <li>حدّث تطبيقاتك من المتاجر الرسمية بانتظام.</li>
 </ul>
 
+<h3>🔥 هل أنت مستعد للانطلاق؟</h3>
+
 <h3>🌟 الخلاصة</h3>
 <p>
+استعد، اختر تجهيزاتك، واجمع فريقك، وانطلق نحو ساحة المعركة! في عالم Free Fire، لا مكان للتردد عندما تبدأ المواجهة. طوّر مهاراتك، وتعلم من كل مباراة، وواصل التقدم نحو هدفك: أن تكون آخر لاعب صامد!
 التطبيق المفيد هو الذي يساعدك على تحقيق هدفك بطريقة سهلة وآمنة.
 استخدم هاتفك بذكاء، واكتشف الأدوات التي تناسب احتياجاتك،
 واجعل التكنولوجيا وسيلة للتعلم والإبداع والإنتاجية.
 </p>
 </section>
 
+<div class="download" id="download">
+<h3>📥 حمّل Free Fire الآن!</h3>
+<p>
+هل أنت مستعد للانطلاق في مغامرتك؟ حمّل اللعبة من متجر Google Play الرسمي وابدأ رحلتك في عالم المعارك والتحديات.
+</p>
+<a class="btn" href="https://play.google.com/store/apps/details?id=com.dts.freefireth" target="_blank" rel="noopener">
+📲 تحميل Free Fire من Google Play
+</a>
+</div>
 <section id="tips" class="article">
 <h2>💡 نصائح تقنية مهمة لكل مستخدم هاتف</h2>
 
+<div class="download">
+<h3>🔗 رابط إضافي</h3>
+<p>افتح الرابط الذي أرسلته سابقًا.</p>
+<a class="btn" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ksal.com/&ved=2ahUKEwjGqZGh9ImXAxUR1wIHHUeVEIgQFnoECCEQAQ&usg=AOvVaw0JHPkd5VHby1Qe7rvzatIv" target="_blank" rel="noopener">
+فتح الرابط
+</a>
+</div>
 <h3>1. حافظ على مساحة التخزين</h3>
 <p>احذف الملفات المكررة والتطبيقات غير المستخدمة، وانقل الملفات المهمة إلى مكان آمن.</p>
 
+<p style="text-align:center;font-size:20px;font-weight:bold;color:#ffc857">
+🎮 Abdlh ff — عالم فري فاير بين يديك!
+</p>
 <h3>2. احمِ حساباتك</h3>
 <p>استعمل كلمات مرور مختلفة لحساباتك، ولا تشارك رموز التحقق مع أي شخص.</p>
 
+</section>
+<div class="download" id="youtube">
+  <h3>▶️ قناة Abdlh ff على YouTube</h3>
+  <p>اشترك في قناتنا على يوتيوب وتابع أحدث الفيديوهات والمحتوى الخاص بفري فاير!</p>
+
+  <a class="btn"
+     href="https://youtube.com/channel/UCIjFlfxLyTr1PKHiqt_sTnQ?si=AyTzdFd8EQW9vgT4"
+     target="_blank"
+     rel="noopener">
+    🎬 زيارة قناة اليوتيوب
+  </a>
+</div>
+<section id="updates">
+<h2>📲 تحديثات فري فاير</h2>
+<div class="card">
+<h3>آخر تحديثات اللعبة</h3>
 <h3>3. انتبه إلى التطبيقات المعدّلة</h3>
 <p>
+اكتشف أخبار التحديثات وروابط المصادر الرسمية عند إضافتها إلى الموقع.
 تجنّب ملفات APK المجهولة التي تعدك بنسخ مدفوعة مجانًا أو بميزات غير رسمية.
 قد تحتوي على برمجيات ضارة أو تسرّب بياناتك.
 </p>
+<a class="btn" href="https://ff.garena.com/" target="_blank" rel="noopener">
+الموقع الرسمي لفري فاير
+</a>
+</div>
 
 <h3>4. استفد من أدوات الذكاء الاصطناعي</h3>
 <p>يمكنك استخدام أدوات الذكاء الاصطناعي للمساعدة في الدراسة والكتابة والتصميم وتنظيم الأفكار.</p>
 </section>
 
 <div class="ad">
+📢 مساحة إعلانية ثالثة — موضع مخصص للإعلانات.
 📢 مساحة إعلانية ثانية — موضع مخصص للإعلانات.
 </div>
 
@@ -253,6 +422,8 @@ nav a{display:inline-block;margin:5px}
 <h2>ℹ️ حول الموقع</h2>
 <div class="card">
 <p>
+Abdlh ff موقع مستقل لمشاركة أخبار ومعلومات لعبة Free Fire، وغير تابع رسميًا لشركة Garena.
+جميع العلامات التجارية لأصحابها.
 App Abdlh موقع مستقل يهتم بالتطبيقات المفيدة والتقنية،
 ويقدم مقالات وشروحات وروابط للمتاجر الرسمية.
 الموقع غير تابع رسميًا للتطبيقات المذكورة، وجميع العلامات التجارية
@@ -262,6 +433,14 @@ App Abdlh موقع مستقل يهتم بالتطبيقات المفيدة وا�
 </section>
 
 <div class="download">
+  <h3>🔗 رابط إضافي</h3>
+  <p>اضغط هنا لفتح الرابط.</p>
+  <a class="btn"
+     href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.stml10.com/&ved=2ahUKEwjv57_n-ImXAxX4gP0HHYC2AUYQFnoECCwQAQ&sqi=2&usg=AOvVaw2vDCR2jJ9Hb2wi_uo8mF_C"
+     target="_blank"
+     rel="noopener">
+    🌐 فتح الرابط
+  </a>
 <h3>🌐 تابعنا واكتشف المزيد</h3>
 <p>زوروا موقعنا باستمرار لاكتشاف تطبيقات وأدوات ومقالات تقنية جديدة.</p>
 <a class="btn" href="#apps">📲 تصفح التطبيقات</a>
@@ -270,8 +449,8 @@ App Abdlh موقع مستقل يهتم بالتطبيقات المفيدة وا�
 </main>
 
 <footer>
+© 2026 Abdlh ff — موقع أخبار مستقل لعشاق Free Fire
 © 2026 App Abdlh — عالم التطبيقات المفيدة
 </footer>
 
 </body>
-</html>
